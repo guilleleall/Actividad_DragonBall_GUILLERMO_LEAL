@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes Dragon Ball</title>
+    <link rel="stylesheet" href="DragonBall.css">
+</head>
+<body>
+    <h1>Personajes Dragon Ball</h1>
+    <div>
+        <input type="text" id="buscarNombre" placeholder="Ingresa el nombre...">
+        <input type="text" id="buscarRaza" placeholder="Ingresa la raza...">
+        <select id="buscarGenero">
+            <option value="">Todos</option>
+            <option value="Male">Masculino</option>
+            <option value="Female">Femenino</option>
+        </select>
+        <button onclick="buscarPersonajes()">Buscar</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Raza</th>
+                <th>Género</th>
+            </tr>
+        </thead>
+        <tbody id="characterList"></tbody>
+    </table>
+    <div id="pagination"></div>
+    <div id="characterDetails"></div>
+
+    <script src="DragonBAll.js"></script>
+</body>
+</html>
